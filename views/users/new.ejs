@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+<% if (user) { %>
+<h2><%= user.name %></h2>
+<% user.enResult.forEach(function(p) {%>
+    <h4><%= p.result %></h4>
+    <h4><%= p.result2 %></h4>
+
+<% }); %>
+<% } %>
+
+
+
+
+<%- include('../partials/footer') %>

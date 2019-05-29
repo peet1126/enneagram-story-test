@@ -5,6 +5,7 @@ var usersCtrl = require('../controllers/users');
 
 
 router.get('/', usersCtrl.index);
+router.post('/:id/story', usersCtrl.new);
 
 
 module.exports = router;
